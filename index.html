@@ -1,14 +1,185 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TED Data Narration</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    /* overflow: hidden; */
+  }
+
+
+  .containerdiv {
+    border: 0;
+    float: left;
+    position: relative;
+  }
+
+  .cornerimage {
+    border: 0;
+    position: absolute;
+    /* top: 110px;
+    left: 932px; */
+    top: 220px;
+    left: 128px;
+    right: 0;
+    width: 9%;
+    height: 9%;
+  }
+  .longframe
+  {
+    border: 0;
+    position: absolute;
+    top: 80px;
+    left: 96px;
+  }
+  .youtube
+  {
+    border: 0;
+    position: absolute;
+    top: 200px;
+    right: 410px;
+  }
+  .duration
+  {
+    border: 0;
+    position: absolute;
+    top: 184px;
+    left: 120px;
+  }
+  .legend1
+  {
+    border: 0;
+    position: absolute;
+    top: 180px;
+    left: 128px;
+    width: 48%;
+    height: 48%;
+  }
+  .legend2
+  {
+    border: 0;
+    position: absolute;
+    top: 340px;
+    left: 128px;
+    width: 48%;
+    height: 48%;
+  }
+  .legend3
+  {
+    border: 0;
+    position: absolute;
+    top: 226px;
+    left: 186px;
+    width: 48%;
+    height: 48%;
+  }
+  .tedtopic
+  {
+    border: 0;
+    position: absolute;
+    top: 472px;
+    left: 128px;
+    width: 48%;
+    height: 48%;
+  }
+  .legend4
+  {
+    border: 0;
+    position: absolute;
+    top: 428px;
+    left: 700px;
+    /* width: 48%;
+    height: 48%; */
+    /* text-align: center; */
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  <img src="Slide 16_9 - 15.png" style=" object-fit: cover;">
-  </body>
+  }
+  .legend5
+  {
+    border: 0;
+    position: absolute;
+    top: 800px;
+    left: 700px;
+    /* width: 48%;
+    height: 48%; */
+    /* text-align: center; */
+    
+  }
+  
+  
+  
+</style>
+
+<body>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <!-- Title Slide -->
+    <div class="containerdiv">
+      <img src="Title.png" alt="img">
+      <img class="cornerimage" src="tedgif.gif">
+    </div>
+
+    <!-- Topic Distribution -->
+    <img src="Distribution.png">
+
+
+    <img src="TEDGlobalText.png">
+    <!-- Year Axis -->
+    <!-- <div style="background-color: #211C1C"><img src="CountofTalksAxis1.png"></div>  -->
+    <!-- <div style="background-color: #211C1C"><img src="YearsAxis1.png"> -->
+    
+      <div class="containerdiv">
+        <img src="Frame 82.png" alt="img">
+        <div class="longframe">
+          <iframe width="1270" height="2300" frameborder="0"
+  src="https://observablehq.com/embed/b8ec15c199c744c6?cells=viewof+sample1"></iframe>
+        </div>
+        <div  class="legend1">
+          <img src="Leg.png" alt="">
+        </div>
+        <div class="legend2">
+          <img src="Legends.png" alt="">
+        </div>
+        <div class="tedtopic">
+          <img src="TEDTopics.gif" alt="">
+        </div>
+      </div>
+      <div>
+        <img src="Frame 87.png" alt="">
+      </div>
+      <div>
+        <img src="18minrule.png" alt="">
+      </div>
+      <div class="containerdiv">
+        <img src="Frame 90.png" alt="">
+        <div class="youtube">
+          <a href="https://www.youtube.com/watch?v=-FOCpMAww28" target="_blank"><i class="fa fa-youtube-play" style="font-size:64px;color:#E62B1E"></i></a>
+        </div>
+      </div>
+
+
+      <div class="containerdiv">
+        <img src="Last.png" alt="img">
+        <div class="duration">
+          <iframe width="1300" height="800" frameborder="0"
+          src="https://observablehq.com/embed/b8ec15c199c744c6?cells=viewof+sample4"></iframe>
+        </div>
+        <div class="legend4" style="color: #f5f5f5; font-size: 20px; font-family: Wix Madefor Display; font-weight: 500; word-wrap: break-word">Maximum Duration</div>
+        <div class="legend5" style="color: #f5f5f5; font-size: 20px; font-family: Wix Madefor Display; font-weight: 500; word-wrap: break-word">Average Duration</div>
+        <div class="legend3">
+          <img src="Legends.png" alt="">
+        </div>
+      </div>
+</body>
+
 </html>
