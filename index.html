@@ -8,6 +8,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@500&display=swap" rel="stylesheet">
 </head>
 <style>
   img {
@@ -32,7 +35,10 @@
     left: 128px;
     right: 0;
     width: 9%;
-    height: 9%;
+    height: 12%;
+    display: flex;
+    flex-direction: column;
+    /* -ms-flex-direction: column; */
   }
   .longframe
   {
@@ -113,38 +119,135 @@
     /* text-align: center; */
     
   }
+  section.center {
+  padding: 5vw;
+  padding-top: 5em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
   
-  
+ }
+ 
+.box
+{
+    position: absolute; 
+    margin-left:20px ; 
+    padding-right: 350px; 
+    margin-top: 150px;
+    /* z-index: 1; */
+    /* display: flex; */
+    flex-wrap: column;
+    padding-bottom: 20px;
+    /* min-width: 50%;
+    min-height: 50%; */
+    
+}
+.box1
+{
+    float: left;
+    position: absolute; 
+    margin-left:112px ; 
+    padding-right: 350px; 
+    margin-top: 40px;
+    /* z-index: 1; */
+    /* display: flex; */
+    flex-wrap: column;
+    padding-bottom: 20px;
+}
+/* @media screen and (max-width: 900px) {
+  .box {
+    top:20;
+  }
+} */
+
+
+.al_c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+  background-color: #2F2A2A;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+
+.textlegend
+{
+   
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 20px;
+    /* padding-top: 250px;
+    float: center;
+    padding-bottom: 500px; */
+    color: #EFEFEF;
+    background-color: #2F2A2A;
+    /* text-align: center; */
+
+}
+
   
 </style>
 
-<body>
-
+<body style="background-color: #211C1C;">
+<!-- <div class="container"> -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
     <!-- Title Slide -->
-    <div class="containerdiv">
-      <img src="Title.png" alt="img">
-      <img class="cornerimage" src="tedgif.gif">
+    <div class="al_c">
+    
+      <img src="Title.png" alt="img" style="position: relative;">
+      <!-- <img class="cornerimage" src="tedgif.gif"> -->
+
     </div>
 
     <!-- Topic Distribution -->
-    <img src="Distribution.png">
+    <img src="Distribution.png" class="al_c">
 
 
-    <img src="TEDGlobalText.png">
+    <img src="TEDGlobalText.png" class="al_c">
     <!-- Year Axis -->
     <!-- <div style="background-color: #211C1C"><img src="CountofTalksAxis1.png"></div>  -->
     <!-- <div style="background-color: #211C1C"><img src="YearsAxis1.png"> -->
     
-      <div class="containerdiv">
-        <img src="Frame 82.png" alt="img">
-        <div class="longframe">
-          <iframe width="1270" height="2300" frameborder="0"
-  src="https://observablehq.com/embed/b8ec15c199c744c6?cells=viewof+sample1"></iframe>
-        </div>
-        <div  class="legend1">
+      
+        <!-- <img src="Frame 82.png" alt="img"> -->
+        <section>
+            <div class="center">
+                <!-- <img src="Leg.png" style="position: absolute; margin-left:20px ; padding-right: 260px; padding-top: 150px; "> -->
+                <div class="box">
+                    <img src="Leg.png">
+                    <img src="Legends.png" style="padding-top: 20px;">
+                    <img src="TEDTopics.gif" style="padding-top: 20px;">
+                </div>
+                <iframe width="100%" height="2350" frameborder="0"
+                src="https://observablehq.com/embed/b8ec15c199c744c6?cells=viewof+sample1"></iframe>
+                      </div>
+            </div>
+        </section>
+        
+        <!-- <div  class="legend1">
           <img src="Leg.png" alt="">
         </div>
         <div class="legend2">
@@ -152,23 +255,23 @@
         </div>
         <div class="tedtopic">
           <img src="TEDTopics.gif" alt="">
-        </div>
-      </div>
-      <div>
+        </div> -->
+     
+      <div class="al_c">
         <img src="Frame 87.png" alt="">
       </div>
-      <div>
+      <div class="al_c">
         <img src="18minrule.png" alt="">
-      </div>
+      </div class="al_c">
       <div class="containerdiv">
-        <img src="Frame 90.png" alt="">
-        <div class="youtube">
+        <!-- <img src=".png" alt=""> -->
+        <!-- <div class="youtube">
           <a href="https://www.youtube.com/watch?v=-FOCpMAww28" target="_blank"><i class="fa fa-youtube-play" style="font-size:64px;color:#E62B1E"></i></a>
-        </div>
+        </div> -->
       </div>
 
 
-      <div class="containerdiv">
+      <!-- <div class="containerdiv">
         <img src="Last.png" alt="img">
         <div class="duration">
           <iframe width="1300" height="800" frameborder="0"
@@ -179,7 +282,41 @@
         <div class="legend3">
           <img src="Legends.png" alt="">
         </div>
-      </div>
+      </div> -->
+      <div class="container-fluid" style="background-color: #2F2A2A; padding-left: 50px; padding-top:60px; padding-bottom: 50px;">
+        <div class="row">
+            <div class="col-md-6 textlegend" style="padding-left: 88px; text-wrap: wrap;">Before Anderson, TED talks were long and rambling. He changed that with a simple rule: 18 minutes. This forced speakers to get to the point quickly and keep their audiences engaged. Today, the 18-minute rule is one of the hallmarks of TED talks.</div>
+       <div class="col-md-6 embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" width="84%" height="400" src="https://www.youtube.com/embed/-FOCpMAww28?si=D_rNy5YD8FPoBGMs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+       </div>
+        </div>
+    </div>
+
+
+
+
+      <section>
+        <div class="center">
+            <div class="box1">
+                
+                <img src="Legends.png" style="padding-top: 20px;">
+                
+            </div>
+            <!-- <div class="textlegend" style="color: #f5f5f5;">Maximum Duration</div> -->
+            <iframe width="100%" height="750" frameborder="0"
+  src="https://observablehq.com/embed/b8ec15c199c744c6?cells=viewof+sample4"></iframe>
+                  </div>
+        </div>
+    </section>
+
+
+    <img src="Overview.png" class="al_c">
+    <img src="Process-1.png" class="al_c">
+    <img src="Process.png" class="al_c">
+    <!-- <img src="thank you.png" class="al_c"> -->
+    
+    <!-- </div> -->
 </body>
 
 </html>
