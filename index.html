@@ -11,6 +11,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@500&display=swap" rel="stylesheet">
+<script>
+// Query the elements
+const iframeEle = document.getElementById('iframe');
+const loadingEle = document.getElementById('loading');
+
+iframeEle.addEventListener('load', function () {
+    // Hide the loading indicator
+    loadingEle.style.display = 'none';
+
+    // Bring the iframe back
+    iframeEle.style.opacity = 1;
+});
+
+
+</script>
+
 </head>
 <style>
   img {
@@ -142,13 +158,15 @@
     padding-bottom: 20px;
     /* min-width: 50%;
     min-height: 50%; */
+    width: 80%;
+    height: 80%;
     
 }
 .box1
 {
     float: left;
     position: absolute; 
-    margin-left:112px ; 
+    margin-left:100px ; 
     padding-right: 350px; 
     margin-top: 40px;
     /* z-index: 1; */
@@ -196,13 +214,14 @@
 {
    
     font-family: 'Wix Madefor Display', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     /* padding-top: 250px;
     float: center;
     padding-bottom: 500px; */
-    color: #EFEFEF;
+    /* color: #EFEFEF; */
     background-color: #2F2A2A;
     /* text-align: center; */
+    /* font-weight: lighter; */
 
 }
 
@@ -227,13 +246,14 @@
 
 
     <img src="TEDGlobalText.png" class="al_c">
+    <img src="loadinst.png" class="al_c">
     <!-- Year Axis -->
     <!-- <div style="background-color: #211C1C"><img src="CountofTalksAxis1.png"></div>  -->
     <!-- <div style="background-color: #211C1C"><img src="YearsAxis1.png"> -->
     
       
         <!-- <img src="Frame 82.png" alt="img"> -->
-        <section>
+        <section style="padding-left: 108px; padding-right: 108px;">
             <div class="center">
                 <!-- <img src="Leg.png" style="position: absolute; margin-left:20px ; padding-right: 260px; padding-top: 150px; "> -->
                 <div class="box">
@@ -241,8 +261,11 @@
                     <img src="Legends.png" style="padding-top: 20px;">
                     <img src="TEDTopics.gif" style="padding-top: 20px;">
                 </div>
-                <iframe width="100%" height="2350" frameborder="0"
-                src="https://observablehq.com/embed/b8ec15c199c744c6?cells=viewof+sample1"></iframe>
+                <div id="loading">
+                  <iframe id="iframe" width="100%" height="2350" frameborder="0"
+                  src="https://observablehq.com/embed/b8ec15c199c744c6?cells=viewof+sample1" loading="eager"></iframe>
+                </div>
+                
                       </div>
             </div>
         </section>
@@ -285,27 +308,27 @@
       </div> -->
       <div class="container-fluid" style="background-color: #2F2A2A; padding-left: 50px; padding-top:60px; padding-bottom: 50px;">
         <div class="row">
-            <div class="col-md-6 textlegend" style="padding-left: 88px; text-wrap: wrap;">Before Anderson, TED talks were long and rambling. He changed that with a simple rule: 18 minutes. This forced speakers to get to the point quickly and keep their audiences engaged. Today, the 18-minute rule is one of the hallmarks of TED talks.</div>
+            <div class="col-md-6 textlegend" style="padding-left: 88px; text-wrap: wrap; color: #d9d9d9;">Before Anderson, TED talks were long and rambling. He changed that with a simple rule: 18 minutes. This forced speakers to get to the point quickly and keep their audiences engaged. Today, the 18-minute rule is one of the hallmarks of TED talks.</div>
        <div class="col-md-6 embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" width="84%" height="400" src="https://www.youtube.com/embed/-FOCpMAww28?si=D_rNy5YD8FPoBGMs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="embed-responsive-item" width="84%" height="400" src="https://www.youtube.com/embed/-FOCpMAww28?si=D_rNy5YD8FPoBGMs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="eager"></iframe>
 
        </div>
         </div>
     </div>
+    <img src="loadinst.png" class="al_c">
 
 
 
-
-      <section>
+    <section style="padding-left: 120px; padding-right: 120px;">
         <div class="center">
             <div class="box1">
                 
-                <img src="Legends.png" style="padding-top: 20px;">
+                <img src="Legends short1.png" style="padding-top: 8px;">
                 
             </div>
             <!-- <div class="textlegend" style="color: #f5f5f5;">Maximum Duration</div> -->
             <iframe width="100%" height="750" frameborder="0"
-  src="https://observablehq.com/embed/b8ec15c199c744c6?cells=viewof+sample4"></iframe>
+  src="https://observablehq.com/embed/b8ec15c199c744c6?cells=viewof+sample4" loading="eager"></iframe>
                   </div>
         </div>
     </section>
@@ -313,7 +336,7 @@
 
     <img src="Overview.png" class="al_c">
     <img src="Process-1.png" class="al_c">
-    <img src="Process.png" class="al_c">
+    <img src="Process-2.png" class="al_c">
     <!-- <img src="thank you.png" class="al_c"> -->
     
     <!-- </div> -->
